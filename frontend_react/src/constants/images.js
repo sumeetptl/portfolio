@@ -34,8 +34,13 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import django from '../assets/django.png'
+import aws from '../assets/aws.png'
+
 
 export default {
+  aws,
+  django,
   email,
   mobile,
   api,
