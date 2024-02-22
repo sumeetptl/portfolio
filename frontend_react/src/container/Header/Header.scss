@@ -1,3 +1,25 @@
+$color-dark-one: #2f2342;
+$color-dark-two: #4062fa;
+
+@mixin flex-box($alignItem, $justifyContent, $flexDirection) {
+    display: flex;
+    align-items: $alignItem;
+    justify-content: $justifyContent;
+    flex-direction: $flexDirection;
+}
+
+@mixin font-style($size, $weight, $height, $spacing, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+    color: $color;
+}
+
+@mixin CTA($color) {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, $color 0 -3px 0 inset;
+}
 #home {
     position: relative;
     background: url("../../assets/bgIMG.png");
@@ -166,12 +188,12 @@
   }
   
   .app__header-img {
-    flex: 1;
+    flex: 0.7;
     height: 100%;
   
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
     position: relative;
   
     img {
@@ -194,3 +216,4 @@
       margin: 2rem 0;
     }
   }
+  

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
+
 import './Header.scss';
 
 const scaleVariants = {
@@ -34,10 +35,11 @@ const Header = () => (
 
         <div className="tag-cmp app__flex">
           <p className="p-text">Software Engineer</p>
-          <p className="p-text">Backend,AWS Cloud,Devops</p>
+          <p className="p-text">Backend Developer , Cloud Engineer</p>
         </div>
       </div>
     </motion.div>
+
 
     <motion.div
       whileInView={{ opacity: [0, 1] }}
@@ -53,7 +55,6 @@ const Header = () => (
         className="overlay_circle"
       />
     </motion.div>
-
     <motion.div
       variants={scaleVariants}
       whileInView={scaleVariants.whileInView}
@@ -65,6 +66,7 @@ const Header = () => (
         </div>
       ))}
     </motion.div>
+    
   </div>
 );
 
